@@ -14,6 +14,7 @@
 		C13F5FA7222F1E5C005038CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13F5FA5222F1E5C005038CE /* LaunchScreen.storyboard */; };
 		C13F5FB2222F1E5C005038CE /* talya2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F5FB1222F1E5C005038CE /* talya2Tests.swift */; };
 		C13F5FBD222F1E5C005038CE /* talya2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F5FBC222F1E5C005038CE /* talya2UITests.swift */; };
+		C187AB1C22CF93CA0019965B /* AppIcons in Resources */ = {isa = PBXBuildFile; fileRef = C187AB1B22CF93CA0019965B /* AppIcons */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +35,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C13F5F99222F1E5A005038CE /* talya2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = talya2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C13F5F99222F1E5A005038CE /* Mixlet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mixlet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13F5F9C222F1E5A005038CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C13F5F9E222F1E5A005038CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C13F5FA1222F1E5A005038CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C13F5FA3222F1E5C005038CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C13F5FA6222F1E5C005038CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C13F5FA8222F1E5C005038CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C13F5FAD222F1E5C005038CE /* talya2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = talya2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C13F5FAD222F1E5C005038CE /* MixletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13F5FB1222F1E5C005038CE /* talya2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = talya2Tests.swift; sourceTree = "<group>"; };
 		C13F5FB3222F1E5C005038CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C13F5FB8222F1E5C005038CE /* talya2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = talya2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C13F5FB8222F1E5C005038CE /* MixletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13F5FBC222F1E5C005038CE /* talya2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = talya2UITests.swift; sourceTree = "<group>"; };
 		C13F5FBE222F1E5C005038CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C187AB1B22CF93CA0019965B /* AppIcons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppIcons; path = ../../../Desktop/AppIcons; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		C13F5F90222F1E5A005038CE = {
 			isa = PBXGroup;
 			children = (
+				C187AB1B22CF93CA0019965B /* AppIcons */,
 				C13F5F9B222F1E5A005038CE /* talya2 */,
 				C13F5FB0222F1E5C005038CE /* talya2Tests */,
 				C13F5FBB222F1E5C005038CE /* talya2UITests */,
@@ -87,9 +90,9 @@
 		C13F5F9A222F1E5A005038CE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C13F5F99222F1E5A005038CE /* talya2.app */,
-				C13F5FAD222F1E5C005038CE /* talya2Tests.xctest */,
-				C13F5FB8222F1E5C005038CE /* talya2UITests.xctest */,
+				C13F5F99222F1E5A005038CE /* Mixlet.app */,
+				C13F5FAD222F1E5C005038CE /* MixletTests.xctest */,
+				C13F5FB8222F1E5C005038CE /* MixletUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,9 +131,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C13F5F98222F1E5A005038CE /* talya2 */ = {
+		C13F5F98222F1E5A005038CE /* Mixlet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C13F5FC1222F1E5C005038CE /* Build configuration list for PBXNativeTarget "talya2" */;
+			buildConfigurationList = C13F5FC1222F1E5C005038CE /* Build configuration list for PBXNativeTarget "Mixlet" */;
 			buildPhases = (
 				C13F5F95222F1E5A005038CE /* Sources */,
 				C13F5F96222F1E5A005038CE /* Frameworks */,
@@ -140,14 +143,14 @@
 			);
 			dependencies = (
 			);
-			name = talya2;
+			name = Mixlet;
 			productName = talya2;
-			productReference = C13F5F99222F1E5A005038CE /* talya2.app */;
+			productReference = C13F5F99222F1E5A005038CE /* Mixlet.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C13F5FAC222F1E5C005038CE /* talya2Tests */ = {
+		C13F5FAC222F1E5C005038CE /* MixletTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C13F5FC4222F1E5C005038CE /* Build configuration list for PBXNativeTarget "talya2Tests" */;
+			buildConfigurationList = C13F5FC4222F1E5C005038CE /* Build configuration list for PBXNativeTarget "MixletTests" */;
 			buildPhases = (
 				C13F5FA9222F1E5C005038CE /* Sources */,
 				C13F5FAA222F1E5C005038CE /* Frameworks */,
@@ -158,14 +161,14 @@
 			dependencies = (
 				C13F5FAF222F1E5C005038CE /* PBXTargetDependency */,
 			);
-			name = talya2Tests;
+			name = MixletTests;
 			productName = talya2Tests;
-			productReference = C13F5FAD222F1E5C005038CE /* talya2Tests.xctest */;
+			productReference = C13F5FAD222F1E5C005038CE /* MixletTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C13F5FB7222F1E5C005038CE /* talya2UITests */ = {
+		C13F5FB7222F1E5C005038CE /* MixletUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C13F5FC7222F1E5C005038CE /* Build configuration list for PBXNativeTarget "talya2UITests" */;
+			buildConfigurationList = C13F5FC7222F1E5C005038CE /* Build configuration list for PBXNativeTarget "MixletUITests" */;
 			buildPhases = (
 				C13F5FB4222F1E5C005038CE /* Sources */,
 				C13F5FB5222F1E5C005038CE /* Frameworks */,
@@ -176,9 +179,9 @@
 			dependencies = (
 				C13F5FBA222F1E5C005038CE /* PBXTargetDependency */,
 			);
-			name = talya2UITests;
+			name = MixletUITests;
 			productName = talya2UITests;
-			productReference = C13F5FB8222F1E5C005038CE /* talya2UITests.xctest */;
+			productReference = C13F5FB8222F1E5C005038CE /* MixletUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +212,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C13F5F94222F1E5A005038CE /* Build configuration list for PBXProject "talya2" */;
+			buildConfigurationList = C13F5F94222F1E5A005038CE /* Build configuration list for PBXProject "Mixlet" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -222,9 +225,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C13F5F98222F1E5A005038CE /* talya2 */,
-				C13F5FAC222F1E5C005038CE /* talya2Tests */,
-				C13F5FB7222F1E5C005038CE /* talya2UITests */,
+				C13F5F98222F1E5A005038CE /* Mixlet */,
+				C13F5FAC222F1E5C005038CE /* MixletTests */,
+				C13F5FB7222F1E5C005038CE /* MixletUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C13F5FA7222F1E5C005038CE /* LaunchScreen.storyboard in Resources */,
+				C187AB1C22CF93CA0019965B /* AppIcons in Resources */,
 				C13F5FA4222F1E5C005038CE /* Assets.xcassets in Resources */,
 				C13F5FA2222F1E5A005038CE /* Main.storyboard in Resources */,
 			);
@@ -287,12 +291,12 @@
 /* Begin PBXTargetDependency section */
 		C13F5FAF222F1E5C005038CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C13F5F98222F1E5A005038CE /* talya2 */;
+			target = C13F5F98222F1E5A005038CE /* Mixlet */;
 			targetProxy = C13F5FAE222F1E5C005038CE /* PBXContainerItemProxy */;
 		};
 		C13F5FBA222F1E5C005038CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C13F5F98222F1E5A005038CE /* talya2 */;
+			target = C13F5F98222F1E5A005038CE /* Mixlet */;
 			targetProxy = C13F5FB9222F1E5C005038CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -448,7 +452,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = blackmadeco.talya2;
+				PRODUCT_BUNDLE_IDENTIFIER = blackmadeco.mixlet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,7 +474,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = blackmadeco.talya2;
+				PRODUCT_BUNDLE_IDENTIFIER = blackmadeco.mixlet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -494,7 +498,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/talya2.app/talya2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mixlet.app/Mixlet";
 			};
 			name = Debug;
 		};
@@ -514,7 +518,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/talya2.app/talya2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mixlet.app/Mixlet";
 			};
 			name = Release;
 		};
@@ -559,7 +563,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C13F5F94222F1E5A005038CE /* Build configuration list for PBXProject "talya2" */ = {
+		C13F5F94222F1E5A005038CE /* Build configuration list for PBXProject "Mixlet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C13F5FBF222F1E5C005038CE /* Debug */,
@@ -568,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C13F5FC1222F1E5C005038CE /* Build configuration list for PBXNativeTarget "talya2" */ = {
+		C13F5FC1222F1E5C005038CE /* Build configuration list for PBXNativeTarget "Mixlet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C13F5FC2222F1E5C005038CE /* Debug */,
@@ -577,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C13F5FC4222F1E5C005038CE /* Build configuration list for PBXNativeTarget "talya2Tests" */ = {
+		C13F5FC4222F1E5C005038CE /* Build configuration list for PBXNativeTarget "MixletTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C13F5FC5222F1E5C005038CE /* Debug */,
@@ -586,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C13F5FC7222F1E5C005038CE /* Build configuration list for PBXNativeTarget "talya2UITests" */ = {
+		C13F5FC7222F1E5C005038CE /* Build configuration list for PBXNativeTarget "MixletUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C13F5FC8222F1E5C005038CE /* Debug */,
