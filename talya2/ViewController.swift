@@ -33,7 +33,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: "http://assemble.blackmad.com")!
+        let url = URL(string: "https://mixlet.firebaseapp.com")!
         
         let req = URLRequest(url: url)
         self.webView!.load(req)
