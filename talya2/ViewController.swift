@@ -25,6 +25,8 @@ class ViewController: UIViewController, WKNavigationDelegate {
         webViewConfiguration.suppressesIncrementalRendering = false
         webViewConfiguration.allowsAirPlayForMediaPlayback = true
         webViewConfiguration.mediaTypesRequiringUserActionForPlayback = []
+        webViewConfiguration.applicationNameForUserAgent = "Version/8.0.2 Safari/600.2.5"
+
        
         self.webView = WKWebView(frame: self.view.frame, configuration: webViewConfiguration)
         self.view = self.webView
@@ -36,7 +38,31 @@ class ViewController: UIViewController, WKNavigationDelegate {
         let url = URL(string: "https://mixlet.firebaseapp.com")!
         
         let req = URLRequest(url: url)
+        self.webView!.navigationDelegate = self
         self.webView!.load(req)
+    }
+    
+    
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        if navigationAction.navigationType == .linkActivated  {
+            if let newURL = navigationAction.request.url,
+                let host = newURL.host , !host.hasPrefix("mixlet") &&
+                UIApplication.shared.canOpenURL(newURL) &&
+                UIApplication.shared.open(url, options: [:], completionHandler: nil) {
+//                print(newURL)
+//                print("Redirected to browser. No need to open it locally")
+                decisionHandler(.cancel)
+            } else {
+//                print("Open it locally")
+//                print(navigationAction.request.url)
+//                print(navigationAction.request.url?.host)
+//                print(navigationAction.request.url?.host?.hasPrefix("mixlet"))
+                decisionHandler(.allow)
+            }
+        } else {
+//            print("not a user click")
+            decisionHandler(.allow)
+        }
     }
     
     override func didReceiveMemoryWarning() {
