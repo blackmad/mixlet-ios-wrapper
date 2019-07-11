@@ -47,20 +47,20 @@ class ViewController: UIViewController, WKNavigationDelegate {
         if navigationAction.navigationType == .linkActivated  {
             if let newURL = navigationAction.request.url,
                 let host = newURL.host , !host.hasPrefix("mixlet") &&
-                UIApplication.shared.canOpenURL(newURL) &&
-                UIApplication.shared.open(url, options: [:], completionHandler: nil) {
-//                print(newURL)
-//                print("Redirected to browser. No need to open it locally")
+                UIApplication.shared.canOpenURL(newURL) {
+                UIApplication.shared.open(newURL, options: [:], completionHandler: nil)
+                print(newURL)
+                print("Redirected to browser. No need to open it locally")
                 decisionHandler(.cancel)
             } else {
-//                print("Open it locally")
-//                print(navigationAction.request.url)
-//                print(navigationAction.request.url?.host)
-//                print(navigationAction.request.url?.host?.hasPrefix("mixlet"))
+                print("Open it locally")
+                print(navigationAction.request.url)
+                print(navigationAction.request.url?.host)
+                print(navigationAction.request.url?.host?.hasPrefix("mixlet"))
                 decisionHandler(.allow)
             }
         } else {
-//            print("not a user click")
+            print("not a user click")
             decisionHandler(.allow)
         }
     }
