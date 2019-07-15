@@ -35,7 +35,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: "https://mixlet.firebaseapp.com")!
+        let url = URL(string: "https://www.mixlet.com")!
         
         let req = URLRequest(url: url)
         self.webView!.navigationDelegate = self
@@ -48,7 +48,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
 //        print(navigationAction.targetFrame?.isMainFrame);
         if navigationAction.targetFrame?.isMainFrame ?? false {
             if let newURL = navigationAction.request.url,
-                let host = newURL.host , !host.hasPrefix("mixlet") &&
+                let host = newURL.host , !host.contains("mixlet.com") &&
                 UIApplication.shared.canOpenURL(newURL) {
                 UIApplication.shared.open(newURL, options: [:], completionHandler: nil)
 //                print(newURL)
