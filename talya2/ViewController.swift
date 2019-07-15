@@ -49,6 +49,10 @@ class ViewController: UIViewController, WKNavigationDelegate {
         if navigationAction.targetFrame?.isMainFrame ?? false {
             if let newURL = navigationAction.request.url,
                 let host = newURL.host , !host.contains("mixlet.com") &&
+                !host.contains("accounts.google.com") &&
+                !host.contains("accountchooser.com") &&
+                !host.contains("mixlet.firebaseapp.com") &&
+                !host.contains("googleapis.com") &&
                 UIApplication.shared.canOpenURL(newURL) {
                 UIApplication.shared.open(newURL, options: [:], completionHandler: nil)
 //                print(newURL)
